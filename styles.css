@@ -29,7 +29,10 @@
 
 body {
     background-color: var(--black);
+    font-family: "SpaceGrotesk-Medium", Arial, Helvetica, sans-serif;
 }
+
+/* Header */
 
 header {
     align-items: center;
@@ -71,4 +74,36 @@ h1 {
     position: absolute;
     bottom: 0;
     right: -5rem;
+}
+
+/* Intro Section */
+
+.intro {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-block-end: 1rem;
+}
+
+h2,
+.intro-text {
+    color: var(--light-grey);
+}
+
+.intro-text {
+    line-height: 150%;
+    width: 80%;
+}
+
+.name {
+    text-decoration: underline;
+    text-decoration-color: var(--green);
+    text-underline-offset: 0.5rem;
 }
