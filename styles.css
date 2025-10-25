@@ -3,18 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-@font-face {
-    font-family: "SpaceGrotesk-Bold", Arial, Helvetica, sans-serif;
-    src: url(./assets/fonts/static/SpaceGrotesk-Bold.ttf) format("truetype");
-    font-weight: 100 900;
-}
-
-@font-face {
-    font-family: "SpaceGrotesk-Medium", Arial, Helvetica, sans-serif;
-    src: url(./assets/fonts/static/SpaceGrotesk-Medium.ttf) format("truetype");
-    font-weight: 100 900;
+    font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -27,10 +16,13 @@
 
 /* Main Styling */
 
+html {
+}
+
 body {
     background-color: var(--black);
-    padding: 1rem;
-    font-family: "SpaceGrotesk-Medium", Arial, Helvetica, sans-serif;
+    padding: 0 1rem;
+    width: 100%;
 }
 
 hr {
@@ -46,15 +38,12 @@ header {
     flex-direction: column;
     gap: 1.5rem;
     justify-content: center;
-    padding: 1.5rem;
     position: relative;
     width: 100%;
-    overflow-x: hidden;
 }
 
 h1 {
     color: var(--white);
-    font-family: "SpaceGrotesk-Bold", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5rem;
 }
 
@@ -151,6 +140,7 @@ h2,
     flex-direction: column;
     gap: 3rem;
     padding: 3rem 1.5rem;
+    position: relative;
 }
 
 article {
@@ -165,4 +155,81 @@ h3 {
 
 .experience-text {
     color: var(--light-grey);
+}
+
+.experience-rings {
+    position: absolute;
+    top: 30rem;
+    right: -22rem;
+}
+
+/* Projects Section */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+.projects-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-block-end: 2.5rem;
+}
+
+.projects-contact {
+    margin: 0;
+}
+
+.project-header-text {
+    margin: 0;
+}
+
+.project-thumbnail {
+    height: auto;
+    margin-block-end: 1rem;
+    width: 100%;
+}
+
+h4 {
+    color: var(--light-grey);
+    font-size: 1.5rem;
+    margin-block-end: 1rem;
+    text-align: start;
+}
+
+.tools-container {
+    color: var(--light-grey);
+    display: flex;
+    gap: 1rem;
+    margin-block-end: 1rem;
+}
+
+.tool {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.project-links-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.project-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--white);
+    cursor: pointer;
+    opacity: 0.7;
+    text-decoration: underline;
+    text-decoration-color: var(--green);
+    text-underline-offset: 1rem;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.project-link:hover {
+    opacity: 1;
 }
