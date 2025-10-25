@@ -1,0 +1,74 @@
+/* Global Styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "SpaceGrotesk-Bold", Arial, Helvetica, sans-serif;
+    src: url(./assets/fonts/static/SpaceGrotesk-Bold.ttf) format("truetype");
+    font-weight: 100 900;
+}
+
+@font-face {
+    font-family: "SpaceGrotesk-Medium", Arial, Helvetica, sans-serif;
+    src: url(./assets/fonts/static/SpaceGrotesk-Medium.ttf) format("truetype");
+    font-weight: 100 900;
+}
+
+:root {
+    --black: #151515;
+    --green: #4ee1a0;
+    --dark-grey: #242424;
+    --light-grey: #d9d9d9;
+    --white: #fff;
+}
+
+/* Main Styling */
+
+body {
+    background-color: var(--black);
+}
+
+header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 1.5rem;
+    position: relative;
+    width: 100%;
+}
+
+h1 {
+    color: var(--white);
+    font-family: "SpaceGrotesk-Bold", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+}
+
+.socials-container {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icon-link {
+    text-decoration: none;
+}
+
+.placeholder-img {
+    opacity: 0.3;
+    width: 300px;
+}
+
+.pattern-rings {
+    position: absolute;
+    left: -25rem;
+}
+
+.pattern-circle {
+    position: absolute;
+    bottom: 0;
+    right: -5rem;
+}
