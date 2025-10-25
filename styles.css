@@ -32,6 +32,11 @@ body {
     font-family: "SpaceGrotesk-Medium", Arial, Helvetica, sans-serif;
 }
 
+hr {
+    border-color: var(--white);
+    width: 90%;
+}
+
 /* Header */
 
 header {
@@ -43,6 +48,7 @@ header {
     padding: 1.5rem;
     position: relative;
     width: 100%;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -57,7 +63,14 @@ h1 {
 }
 
 .social-icon-link {
+    cursor: pointer;
+    opacity: 0.7;
     text-decoration: none;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.social-icon-link:hover {
+    opacity: 1;
 }
 
 .placeholder-img {
@@ -99,11 +112,53 @@ h2,
 
 .intro-text {
     line-height: 150%;
-    width: 80%;
+    margin-block-end: 1rem;
+    padding: 1rem 2rem;
 }
 
 .name {
     text-decoration: underline;
     text-decoration-color: var(--green);
     text-underline-offset: 0.5rem;
+}
+
+.contact-me-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--white);
+    cursor: pointer;
+    margin-block-end: 4rem;
+    opacity: 0.7;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: var(--green);
+    text-decoration-thickness: 0.2rem;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.contact-me-link:hover {
+    opacity: 1;
+}
+
+/* Experience Section */
+
+.experience {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 1.5rem;
+}
+
+article {
+    text-align: center;
+}
+
+h3 {
+    color: var(--white);
+    font-size: 2rem;
+    margin-block-end: 0.8rem;
+}
+
+.experience-text {
+    color: var(--light-grey);
 }
