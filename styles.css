@@ -1,4 +1,4 @@
-/* Global Styling */
+/* || Global Styling */
 * {
     padding: 0;
     margin: 0;
@@ -14,7 +14,7 @@
     --white: #fff;
 }
 
-/* Main Styling */
+/* || Main Styling */
 
 html {
     overflow-x: hidden;
@@ -42,13 +42,19 @@ header {
     position: relative;
     width: 100%;
     padding: 3rem 0 0 0;
+    margin-block-end: 1.5rem;
+}
+
+.header-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 h1 {
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 2vw, 2rem);
 }
-
 .socials-container {
     display: flex;
     gap: 1.5rem;
@@ -65,19 +71,15 @@ h1 {
     opacity: 1;
 }
 
-.placeholder-img {
-    width: 300px;
-    margin-block-end: 2rem;
-}
-
 .pattern-rings {
     position: absolute;
+    top: 20rem;
     left: -25rem;
 }
 
 .pattern-circle {
     position: absolute;
-    bottom: 0;
+    top: 30rem;
     right: -5rem;
 }
 
@@ -93,6 +95,15 @@ h1 {
     text-align: center;
 }
 
+.placeholder-img {
+    width: 300px;
+    margin-block-end: 2rem;
+}
+
+.intro-text-container {
+    margin-block-end: 3rem;
+}
+
 h2 {
     font-size: 2.5rem;
     margin-block-end: 1rem;
@@ -105,8 +116,8 @@ h2,
 
 .intro-text {
     line-height: 150%;
-    margin-block-end: 1rem;
     padding: 1rem 2rem;
+    font-size: clamp(1rem, 2.2vw, 1.5rem);
 }
 
 .name {
@@ -156,6 +167,7 @@ h3 {
 }
 
 .experience-text {
+    font-size: clamp(1rem, 2.2vw, 1.2rem);
     color: var(--light-grey);
 }
 
@@ -190,7 +202,7 @@ h3 {
 }
 
 .project-thumbnail {
-    height: auto;
+    height: 14rem;
     margin-block-end: 1rem;
     width: 100%;
 }
@@ -257,6 +269,7 @@ footer {
     color: var(--light-grey);
     width: 90%;
     line-height: 150%;
+    font-size: clamp(1rem, 2.2vw, 1.4rem);
 }
 
 form {
@@ -270,6 +283,7 @@ form {
 label {
     color: var(--light-grey);
     padding-left: 1rem;
+    font-size: clamp(1rem, 2.2vw, 1.4rem);
 }
 
 input,
@@ -279,7 +293,7 @@ textarea {
     border-bottom: 0.1rem solid var(--light-grey);
     color: var(--white);
     padding: 0.5rem;
-    font-size: 1.2rem;
+    font-size: clamp(1.2rem, 2.2vw, 1.6rem);
     margin-block-end: 1rem;
 }
 .form-btn {
@@ -292,6 +306,7 @@ textarea {
     width: 10rem;
     opacity: 0.7;
     cursor: pointer;
+    font-size: clamp(1rem, 2.2vw, 1.1rem);
     transition: opacity 0.2s ease-in-out;
 }
 
@@ -315,4 +330,87 @@ textarea {
 .footer-text {
     color: var(--white);
     font-size: 2rem;
+}
+
+/* || Media Queries */
+
+@media screen and (min-width: 51.15em) {
+    /* Header */
+
+    header {
+        padding: 2rem;
+    }
+
+    .header-items {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 2rem;
+        width: 100%;
+    }
+
+    .pattern-rings {
+        top: 5rem;
+    }
+
+    .pattern-circle {
+        top: 25rem;
+    }
+
+    /* Intro Section */
+
+    .intro {
+        display: grid;
+        grid-template: 1fr / repeat(2, 1fr);
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .placeholder-img {
+        grid-row: 1;
+        grid-column: 2;
+        justify-self: center;
+    }
+
+    .intro-text-container {
+        grid-column: 1;
+        text-align: start;
+    }
+
+    .intro-text {
+        text-align: start;
+        padding: 0;
+        margin-block-end: 1.5rem;
+    }
+
+    /* Experience Section */
+
+    .experience {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    }
+
+    .experience-rings {
+        top: 12rem;
+    }
+
+    /* Project Section */
+
+    .projects-header {
+        padding: 0 2rem;
+        margin-block-end: 1rem;
+    }
+
+    .projects-container {
+        display: grid;
+        grid-template: auto / repeat(2, 1fr);
+        gap: 3rem;
+        padding: 0 2rem;
+        margin-block-end: 3rem;
+    }
+
+    .form-img {
+        top: 44rem;
+    }
+
+    /* Footer */
 }

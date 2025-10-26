@@ -17,41 +17,40 @@
         />
         <link rel="stylesheet" href="./styles.css" />
         <title>Frontend Mentor | Single-page developer portfolio</title>
+        <script src="script.js"></script>
     </head>
     <body>
         <header>
-            <h1>jonmckenzie</h1>
-            <div class="socials-container">
-                <a
-                    class="social-icon-link"
-                    href="https://github.com/jonmc89"
-                    target="_blank"
-                >
-                    <img src="./assets/images/icon-github.svg" alt="" />
-                </a>
-                <a
-                    class="social-icon-link"
-                    href="https://www.frontendmentor.io/profile/jonmc89"
-                    target="_blank"
-                >
-                    <img
-                        src="./assets/images/icon-frontend-mentor.svg"
-                        alt=""
-                    />
-                </a>
-                <a
-                    class="social-icon-link"
-                    href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
-                    target="_blank"
-                >
-                    <img src="./assets/images/icon-linkedin.svg" alt="" />
-                </a>
+            <div class="header-items">
+                <h1>jonmckenzie</h1>
+                <div class="socials-container">
+                    <a
+                        class="social-icon-link"
+                        href="https://github.com/jonmc89"
+                        target="_blank"
+                    >
+                        <img src="./assets/images/icon-github.svg" alt="" />
+                    </a>
+                    <a
+                        class="social-icon-link"
+                        href="https://www.frontendmentor.io/profile/jonmc89"
+                        target="_blank"
+                    >
+                        <img
+                            src="./assets/images/icon-frontend-mentor.svg"
+                            alt=""
+                        />
+                    </a>
+                    <a
+                        class="social-icon-link"
+                        href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
+                        target="_blank"
+                    >
+                        <img src="./assets/images/icon-linkedin.svg" alt="" />
+                    </a>
+                </div>
             </div>
-            <img
-                class="placeholder-img"
-                src="./assets/images/profileimg.jpeg"
-                alt="jon mckenzie"
-            />
+
             <img
                 class="pattern-rings"
                 src="./assets/images/pattern-rings.svg"
@@ -65,19 +64,26 @@
         </header>
         <main>
             <section class="intro">
-                <h2>
-                    Nice to meet you! I'm
-                    <span class="name">Jon McKenzie</span>.
-                </h2>
-                <p class="intro-text">
-                    Based in the UK, I’m a front-end developer passionate about
-                    building accessible web apps that users love.
-                </p>
-                <a
-                    class="contact-me-link"
-                    href="mailto:jonmckenzie8930@gmail.com"
-                    >CONTACT ME</a
-                >
+                <img
+                    class="placeholder-img"
+                    src="./assets/images/profileimg.jpeg"
+                    alt="jon mckenzie"
+                />
+                <div class="intro-text-container">
+                    <h2>
+                        Nice to meet you! I'm
+                        <span class="name">Jon McKenzie</span>.
+                    </h2>
+                    <p class="intro-text">
+                        Based in the UK, I’m a front-end developer passionate
+                        about building accessible web apps that users love.
+                    </p>
+                    <a
+                        class="contact-me-link"
+                        href="mailto:jonmckenzie8930@gmail.com"
+                        >CONTACT ME</a
+                    >
+                </div>
             </section>
             <section class="experience">
                 <article>
@@ -111,141 +117,169 @@
                         >CONTACT ME</a
                     >
                 </div>
-                <article class="project-item">
-                    <img
-                        class="project-thumbnail"
-                        src="./assets/images/project1.png"
-                        alt="E-learning landing page screenshot"
-                    />
-                    <h4>E-Learning Landing Page</h4>
-                    <div class="tools-container">
-                        <p class="tool">HTML</p>
-                        <p class="tool">CSS</p>
-                    </div>
-                    <div class="project-links-container">
-                        <a
-                            class="project-link"
-                            href="https://jonmc89.github.io/skilled-elearning-landing-page/"
-                            target="_blank"
-                            >VIEW PROJECT</a
-                        >
-                        <a
-                            class="project-link"
-                            href="https://github.com/jonmc89/skilled-elearning-landing-page"
-                            target="_blank"
-                            >VIEW CODE</a
-                        >
-                    </div>
-                </article>
-                <article class="project-item">
-                    <img
-                        class="project-thumbnail"
-                        src="./assets/images/project2.png"
-                        alt="Password generator app interface"
-                    />
-                    <h4>Password Generator</h4>
-                    <div class="tools-container">
-                        <p class="tool">HTML</p>
-                        <p class="tool">CSS</p>
-                        <p class="tool">Javascript</p>
-                    </div>
-                    <div class="project-links-container">
-                        <a
-                            class="project-link"
-                            href="https://jonmc89.github.io/password-generator-app/"
-                            target="_blank"
-                            >VIEW PROJECT</a
-                        >
-                        <a
-                            class="project-link"
-                            href="https://github.com/jonmc89/password-generator-app"
-                            target="_blank"
-                            >VIEW CODE</a
-                        >
-                    </div>
-                </article>
-                <article class="project-item">
-                    <img
-                        class="project-thumbnail"
-                        src="./assets/images/project3.png"
-                        alt="Snap landing page screenshot"
-                    />
-                    <h4>Snap Landing Page</h4>
-                    <div class="tools-container">
-                        <p class="tool">HTML</p>
-                        <p class="tool">CSS</p>
-                        <p class="tool">Javascript</p>
-                    </div>
-                    <div class="project-links-container">
-                        <a
-                            class="project-link"
-                            href="https://jonmc89.github.io/intro-section-with-dropdown-navigation-main/"
-                            target="_blank"
-                            >VIEW PROJECT</a
-                        >
-                        <a
-                            class="project-link"
-                            href="https://github.com/jonmc89/intro-section-with-dropdown-navigation-main"
-                            target="_blank"
-                            >VIEW CODE</a
-                        >
-                    </div>
-                </article>
-                <article class="project-item">
-                    <img
-                        class="project-thumbnail"
-                        src="./assets/images/project4.png"
-                        alt="Results summary component interface"
-                    />
-                    <h4>Results Summary Component</h4>
-                    <div class="tools-container">
-                        <p class="tool">HTML</p>
-                        <p class="tool">CSS</p>
-                        <p class="tool">Javascript</p>
-                        <p class="tool">JSON</p>
-                    </div>
-                    <div class="project-links-container">
-                        <a
-                            class="project-link"
-                            href="https://jonmc89.github.io/results-summary-component-main/"
-                            target="_blank"
-                            >VIEW PROJECT</a
-                        >
-                        <a
-                            class="project-link"
-                            href="https://github.com/jonmc89/results-summary-component-main"
-                            target="_blank"
-                            >VIEW CODE</a
-                        >
-                    </div>
-                </article>
-                <article class="project-item">
-                    <img
-                        class="project-thumbnail"
-                        src="./assets/images/project5.png"
-                        alt="Newsletter sign up form screenshot"
-                    />
-                    <h4>Newsletter Sign Up</h4>
-                    <div class="tools-container">
-                        <p class="tool">HTML</p>
-                        <p class="tool">CSS</p>
-                        <p class="tool">Javascript</p>
-                    </div>
-                    <div class="project-links-container">
-                        <a
-                            class="project-link"
-                            href="https://jonmc89.github.io/newsletter-sign-up-with-success-message-main/"
-                            target="_blank"
-                            >VIEW PROJECT</a
-                        >
-                        <a
-                            class="project-link"
-                            href="https://github.com/jonmc89/newsletter-sign-up-with-success-message-main"
-                            target="_blank"
-                            >VIEW CODE</a
-                        >
-                    </div>
-                </article>
+                <div class="projects-container">
+                    <article class="project-item">
+                        <img
+                            class="project-thumbnail"
+                            src="./assets/images/project1.png"
+                            alt="E-learning landing page screenshot"
+                        />
+                        <h4>E-Learning Landing Page</h4>
+                        <div class="tools-container">
+                            <p class="tool">HTML</p>
+                            <p class="tool">CSS</p>
+                        </div>
+                        <div class="project-links-container">
+                            <a
+                                class="project-link"
+                                href="https://jonmc89.github.io/skilled-elearning-landing-page/"
+                                target="_blank"
+                                >VIEW PROJECT</a
+                            >
+                            <a
+                                class="project-link"
+                                href="https://github.com/jonmc89/skilled-elearning-landing-page"
+                                target="_blank"
+                                >VIEW CODE</a
+                            >
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <img
+                            class="project-thumbnail"
+                            src="./assets/images/project2.png"
+                            alt="Password generator app interface"
+                        />
+                        <h4>Password Generator</h4>
+                        <div class="tools-container">
+                            <p class="tool">HTML</p>
+                            <p class="tool">CSS</p>
+                            <p class="tool">Javascript</p>
+                        </div>
+                        <div class="project-links-container">
+                            <a
+                                class="project-link"
+                                href="https://jonmc89.github.io/password-generator-app/"
+                                target="_blank"
+                                >VIEW PROJECT</a
+                            >
+                            <a
+                                class="project-link"
+                                href="https://github.com/jonmc89/password-generator-app"
+                                target="_blank"
+                                >VIEW CODE</a
+                            >
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <img
+                            class="project-thumbnail"
+                            src="./assets/images/project3.png"
+                            alt="Snap landing page screenshot"
+                        />
+                        <h4>Snap Landing Page</h4>
+                        <div class="tools-container">
+                            <p class="tool">HTML</p>
+                            <p class="tool">CSS</p>
+                            <p class="tool">Javascript</p>
+                        </div>
+                        <div class="project-links-container">
+                            <a
+                                class="project-link"
+                                href="https://jonmc89.github.io/intro-section-with-dropdown-navigation-main/"
+                                target="_blank"
+                                >VIEW PROJECT</a
+                            >
+                            <a
+                                class="project-link"
+                                href="https://github.com/jonmc89/intro-section-with-dropdown-navigation-main"
+                                target="_blank"
+                                >VIEW CODE</a
+                            >
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <img
+                            class="project-thumbnail"
+                            src="./assets/images/project4.png"
+                            alt="Results summary component interface"
+                        />
+                        <h4>Results Summary Component</h4>
+                        <div class="tools-container">
+                            <p class="tool">HTML</p>
+                            <p class="tool">CSS</p>
+                            <p class="tool">Javascript</p>
+                            <p class="tool">JSON</p>
+                        </div>
+                        <div class="project-links-container">
+                            <a
+                                class="project-link"
+                                href="https://jonmc89.github.io/results-summary-component-main/"
+                                target="_blank"
+                                >VIEW PROJECT</a
+                            >
+                            <a
+                                class="project-link"
+                                href="https://github.com/jonmc89/results-summary-component-main"
+                                target="_blank"
+                                >VIEW CODE</a
+                            >
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <img
+                            class="project-thumbnail"
+                            src="./assets/images/project5.png"
+                            alt="Newsletter sign up form screenshot"
+                        />
+                        <h4>Newsletter Sign Up</h4>
+                        <div class="tools-container">
+                            <p class="tool">HTML</p>
+                            <p class="tool">CSS</p>
+                            <p class="tool">Javascript</p>
+                        </div>
+                        <div class="project-links-container">
+                            <a
+                                class="project-link"
+                                href="https://jonmc89.github.io/newsletter-sign-up-with-success-message-main/"
+                                target="_blank"
+                                >VIEW PROJECT</a
+                            >
+                            <a
+                                class="project-link"
+                                href="https://github.com/jonmc89/newsletter-sign-up-with-success-message-main"
+                                target="_blank"
+                                >VIEW CODE</a
+                            >
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <img
+                            class="project-thumbnail"
+                            src="./assets/images/project6.png"
+                            alt="Testimonials Grid screenshot"
+                        />
+                        <h4>Testimonials Grid</h4>
+                        <div class="tools-container">
+                            <p class="tool">HTML</p>
+                            <p class="tool">CSS</p>
+                        </div>
+                        <div class="project-links-container">
+                            <a
+                                class="project-link"
+                                href="https://jonmc89.github.io/testimonials-grid-section-main/"
+                                target="_blank"
+                                >VIEW PROJECT</a
+                            >
+                            <a
+                                class="project-link"
+                                href="https://github.com/jonmc89/testimonials-grid-section-main"
+                                target="_blank"
+                                >VIEW CODE</a
+                            >
+                        </div>
+                    </article>
+                </div>
             </section>
         </main>
         <footer>
@@ -257,7 +291,7 @@
                     soon as possible.
                 </p>
             </section>
-            <form action="">
+            <form id="form" action="">
                 <label for="name">NAME</label>
                 <input type="text" id="name" required />
                 <label for="email">EMAIL</label>
@@ -269,7 +303,9 @@
                     rows="10"
                     required
                 ></textarea>
-                <button class="form-btn" type="submit">SEND MESSAGE</button>
+                <button id="submitBtn" class="form-btn" type="submit">
+                    SEND MESSAGE
+                </button>
             </form>
             <img
                 class="form-img"
