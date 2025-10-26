@@ -141,6 +141,7 @@ h2,
 }
 
 .contact-me-link:hover {
+    color: var(--green);
     opacity: 1;
 }
 
@@ -202,7 +203,7 @@ h3 {
 }
 
 .project-thumbnail {
-    height: 14rem;
+    height: auto;
     margin-block-end: 1rem;
     width: 100%;
 }
@@ -246,6 +247,10 @@ h4 {
 
 .project-link:hover {
     opacity: 1;
+}
+
+.project-item {
+    margin-block-end: 4rem;
 }
 
 /* Contact Section */
@@ -413,4 +418,20 @@ textarea {
     }
 
     /* Footer */
+
+    .footer-detail {
+        padding: 2rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 90em) {
+    main {
+        padding: 0 5rem;
+    }
+
+    header {
+        padding: 3rem 5rem;
+    }
 }
