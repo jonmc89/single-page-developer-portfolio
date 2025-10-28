@@ -284,7 +284,7 @@
         </main>
         <footer>
             <section class="contact">
-                <h3>Contact</h3>
+                <h3 class="contact-header">Contact</h3>
                 <p class="contact-intro-text">
                     I would love to hear about your project and how I could
                     help. Please fill in the form, and I’ll get back to you as
@@ -293,16 +293,30 @@
             </section>
             <form id="form" action="">
                 <label for="name">NAME</label>
-                <input type="text" id="name" required />
+                <input
+                    type="text"
+                    id="name"
+                    aria-describedby="nameError"
+                    aria-invalid="false"
+                />
+                <p id="nameError" class="name-error"></p>
                 <label for="email">EMAIL</label>
-                <input type="email" id="email" required />
+                <input
+                    type="email"
+                    id="email"
+                    aria-describedby="emailError"
+                    aria-invalid="false"
+                />
+                <p id="emailError" class="email-error"></p>
                 <label for="message">MESSAGE</label>
                 <textarea
                     name="textarea"
                     id="message"
-                    rows="10"
-                    required
+                    rows="5"
+                    aria-describedby="errorMessage"
+                    aria-invalid="false"
                 ></textarea>
+                <p id="errorMessage" class="message-error"></p>
                 <button id="submitBtn" class="form-btn" type="submit">
                     SEND MESSAGE
                 </button>
